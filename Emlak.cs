@@ -21,7 +21,7 @@ namespace Calisma40_ClassSample
             get { return semt; }
             set
             {
-                semt=value.ToUpper();
+                semt = value.ToUpper();
             }
         }
         public string Rengi
@@ -29,32 +29,40 @@ namespace Calisma40_ClassSample
             get { return renk; }
             set
             {
-                renk=value.ToLower();
+                renk = value.ToLower();
             }
         }
-        public int OdaSayisi 
+        public int OdaSayisi
         {
             get { return odaSayisi; }
             set
             {
-                odaSayisi=Math.Abs(value);
+                odaSayisi = Math.Abs(value);
             }
         }
-         public int KatSayisi 
+        public int KatSayisi
         {
             get { return katSayisi; }
             set
             {
-                katSayisi=Math.Abs(value);
+                katSayisi = Math.Abs(value);
             }
         }
-         public double Alani 
+        public double Alani
         {
             get { return alan; }
             set
             {
-                alan=Math.Abs(value);
+                alan = Math.Abs(value);
             }
+        }
+        public void Kaydet(string dosya)
+        {
+            FileStream fs = new FileStream(dosya, FileMode.Append);
+            StreamWriter sw = new StreamWriter(fs);
+            sw.WriteLine($"{Semti};{Rengi};{odaSayisi};{katSayisi};{Alani};");
+            sw.Close();
+            Console.WriteLine("Kaydetme işlemi başarı ile tamamlandı.");
         }
 
     }
