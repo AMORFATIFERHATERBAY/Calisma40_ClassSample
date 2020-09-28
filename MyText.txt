@@ -4,3 +4,6 @@ KEÇİÖREN;bej;4;3;140;
 YENİMAHALLE;sarı;5;7;240;
 KEÇİÖREN;bej;4;3;140;
 YENİMAHALLE;sarı;5;7;240;
+KEÇİÖREN;bej;4;3;140;
+KEÇİÖREN;bej;4;3;140;
+ÇANKAYA;sarı;6;6;320;
